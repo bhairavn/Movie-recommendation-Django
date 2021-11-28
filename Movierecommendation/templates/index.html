@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html style="margin-bottom: 33px;">
+{% load static %}
+{% load listitem %}
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Contact-Form-Clean-user.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Dark.css' %}">
+</head>
+
+<body id="page-top" style="margin-bottom: 50px;background: rgb(0,0,0);">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">SHnell</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="#Home">Home</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="#Trending">trending</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="/login">login</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="Home" class="masthead" style="background-image:url('{% static 'img/star-sky.jpg' %}');">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">Shnell&nbsp;</h1>
+                        <p class="intro-text">SHNELL is a website that keeps you trending and also uses complex filtering algorithms to recommend the most appropriate movie to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="Trending" class="content-section text-center" style="height: 858px;margin: 6px;margin-top: 0px;background: rgba(0,0,0,0.11);color: #ffffff;border-color: #e0e0e0;">
+        <p class="lead text-uppercase text-center" style="height: 81px;border-width: -17px;margin: 17px;font-size: 40px;text-align: center;margin-top: -121px;margin-bottom: 12px;color: rgb(255,255,255);padding-bottom: 1px;" font-size="20px">Trending</p><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Product List Carousel for Ecommerce Website</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.carousel {
+    margin-bottom:35px;
+	margin: 0px auto;
+	padding: 0px 50px;
+}
+.carousel .carousel-item {
+	min-height: 30px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.carousel .carousel-item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .carousel-item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .carousel-item .btn {
+	color: #333;
+	border-radius: 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #ccc;
+	padding: 5px 5px;
+	margin-top: 5px;
+	line-height: 16px;
+}
+.carousel .carousel-item .btn:hover, .carousel .carousel-item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 100px;
+	width: 40px;
+	background: rgba(145,145,145,0.11);
+	margin: auto 0;
+	
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -16px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #ffff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}	
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin-top: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #e0e0e0;
+}
+.carousel-indicators li.active {	
+	background: #292929;
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+</style>
+{% csrf_token %}
+
+<script type="text/javascript">
+function doAction($dp, $na, $ye, $rat, $ge)
+{
+	console.log($dp,$na,$ye,$rat,$ge);
+     $.ajax({
+         type: "POST",
+         url: "/movielink",
+         data: {displaypic: $dp, name: $na, year: $ye, rating: $rat, genre: $ge},
+         success: function(data){
+                     alert( "Data Saved: " + data );
+
+					window.open("/movie", '_blank') ;
+                  },
+		error: function(jqXHR) {
+		alert("error: " + jqXHR.status);
+		console.log(jqXHR);
+	} 
+    });
+}
+</script>
+
+<script type="text/javascript">
+    function changeFunc($i) 
+	{
+	
+		console.log($i)
+	if ($i==1)
+	{
+		console.log("Action");
+		Gen = "Action" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+				
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+			
+		})
+		}
+	else if ($i==2)
+    	{console.log("Comedy");
+		
+		Gen = "Comedy" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+
+		}
+	else if ($i==3)
+    	{console.log("Drama");
+		Gen = "Drama" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+		}
+	else if ($i==4)
+    	{console.log("Horror");
+		Gen = "Horror" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+		}
+	else if ($i==5)
+    	{console.log("Romance");
+		Gen = "Romance" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+		}
+	else if ($i==6)
+    	{console.log("Documentry");
+		Gen = "Documentry" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+		}
+	else if ($i==7)
+    	{console.log("Animation");
+		Gen = "Animation" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+		}
+	else
+    	{console.log("All");
+		Gen = "All" //value I want to send 
+		$.ajax(
+			{ 
+			url: '/filter', 
+			type: 'POST', 
+			data: Gen,
+			success: function(response)
+			{ 
+				$i.text(response) 
+			},
+			error: function(jqXHR) {
+                alert("error: " + jqXHR.status);
+                console.log(jqXHR);
+            } 
+		})
+		}
+   }
+
+  </script>
+</head>
+
+
+<div class="container-fluid" >
+	<div class="row">
+		<div class="col-md-12">
+			
+			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				{% for i in ns %}
+				<li data-target="#myCarousel" data-slide-to="{{i}}"></li>
+                {% endfor %}
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			
+
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+
+						{% for j in posts1 %}
+						<p>{{j|floatformat:"0"}}</p>
+						<div class="col-sm-3" name='link'>
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/static/img/aveng.jpg" rel="icon" class="thumb-wrapper" sizes="180x180" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">							
+									<h4 >{{ j|listitem:0 }}</h4>
+									<p class="year"  >Year {{ j|listitem:1 }}</p>
+									<p class="year" >Rating {{ j|listitem:2 }}</p>
+									<p class="year" >{{ j|listitem:4 }}</p>                                                                                                                      
+									<button Dp="{{ j|listitem:3 }}"  
+									Nam="{{ j|listitem:0 }}"  
+									Ye="{{ j|listitem:1 }}" 
+									Ra="{{ j|listitem:2 }}" 
+									Ge="{{ j|listitem:3 }}" 
+									
+									onclick="doAction('{{ j|listitem:3 }}','{{ j|listitem:0 }}','{{ j|listitem:1 }}','{{ j|listitem:2 }}','{{ j|listitem:4 }}')" >Get Link</button>
+								</div>						
+							</div>
+						</div>
+                      {% if forloop.counter0|divisibleby:"4"  and forloop.counter0 > 0  and forloop.counter0 != len|listitem:-1 %}
+				</div>
+				</div>
+						<div class="carousel-item">
+						<div class="row">
+                        {% endif %}	
+						{% endfor %}
+						</div>
+						<div>
+                        
+
+              </div>
+                
+            </div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		
+		</div>
+	</div>
+</div>
+
+<style>
+    .input-group{
+      margin-top: 50px;  
+    }
+    </style>
+<div class="input-group">
+  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon" onchange="changeFunc(value)">
+    <option selected>Choose...</option>
+    <option value="1">Action</option>
+    <option value="2">Comedy</option>
+    <option value="3">Drama</option>
+    <option value="4">Horror</option>
+    <option value="5">Romance</option>
+    <option value="6">Documentry</option>
+    <option value="7">Animation</option>
+    <option value="8">All</option>
+  </select>
+ 
+</div>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Product List Carousel for Ecommerce Website</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.carousel {
+    margin-bottom:15px;
+	margin: 0px auto;
+	padding: 0px 20px;
+}
+.carousel .carousel-item {
+	min-height: 30px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+    margin-top:12px;
+}
+.carousel .carousel-item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .carousel-item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .carousel-item .btn {
+	color: #333;
+	border-radius: 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #ccc;
+	padding: 5px 5px;
+	margin-top: 5px;
+	line-height: 16px;
+}
+.carousel .carousel-item .btn:hover, .carousel .carousel-item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 100px;
+	width: 40px;
+	background: rgba(145,145,145,0.11);
+	margin-left: auto;
+  
+	
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -16px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #ffff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}	
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin-top: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #e0e0e0;
+}
+.carousel-indicators li.active {	
+	background: #292929;
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+</style>
+</head>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel2" class="carousel slide" data-ride="carousel" >
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+
+					{%for i in ns %}
+					<li data-target="#myCarousel2" data-slide-to="{{i}}"></li>
+					{% endfor %} 
+				</ol>   
+				<!-- Wrapper for carousel items -->
+			
+
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+
+						{% for j in posts2 %}
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/static/img/ff6.jpg" rel="icon" sizes="180x180" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>{{ j|listitem:0 }}</h4>
+									<p class="year">Year {{ j|listitem:1 }}</p>
+									<p class="year">Rating {{ j|listitem:2 }}</p>
+									<p class="year">{{ j|listitem:4 }}</p>                                                                     
+									<button Dp="{{ j|listitem:3 }}"  Nam="{{ j|listitem:0}}"  Ye="{{ j|listitem:1 }}" Ra="{{ j|listitem:2 }}" Ge="{{ j|listitem:4 }}" onclick="doAction('{{j|listitem:3}}','{{j|listitem:0}}','{{j|listitem:1}}','{{j|listitem:2}}','{{j|listitem:4}}')" >Get Link</button>
+
+								</div>						
+							</div>
+						</div>
+                      {% if forloop.counter0|divisibleby:"4" == 0 and forloop.counter0 > 0  and forloop.counter0 != len|listitem:-1 %}
+				</div>
+				</div>
+						<div class="carousel-item">
+						<div class="row">
+                        {% endif %}	
+						{% endfor %}
+						</div>
+						<div>
+                        
+
+              </div>
+                
+            </div>
+				<!-- Carousel controls -->
+				<a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel2" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+    <section id="contact" style="margin-top: 320px;margin-bottom: 0px;height: 500px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="background: rgb(31,32,33);">
+                    <form  method="POST" action="/contactus">
+					{% csrf_token %}
+                        <div class="form-group">
+                            <h1 class="text-center" style="color: rgb(224,224,224);font-family: Lora, serif;opacity: 0.67;filter: contrast(121%);margin-top: 8px;padding-top: 15px;">contact us&nbsp;</h1>
+                        </div>
+                        <div class="form-group"><input class="form-control" type="text" placeholder="Name" required="" style="width: 330px;color: rgb(34,39,42);background: #ffffff;margin-top: -23px;"></div>
+                    
+                    <div class="form-group"><input type="email" name="email" style="width: 330px;height: 39px;" required="" placeholder="Email"></div>
+                    <div class="form-group"><input type="tel"  name="phone" placeholder="Phone No" style="width: 330px;height: 38px;" required=""></div>
+                    <div class="form-group"><input type="text" name="subject" placeholder="Subject" style="width: 330px;height: 38px;" required=""></div>
+                    <div class="form-group"><textarea style="width: 330px;" name="message" placeholder="Message" required=""></textarea></div>
+                    <div class="form-group"><button class="btn btn-info" type="submit" onclick="location.href = '/contactus'" style="width: 330px;">Submit</button></div>
+                </div>
+				</form>
+                <div class="col-md-6" style="padding-top:90px;padding-left: 20px;padding-right: 20px;color: rgb(255,254,254);background: rgb(31,32,33);margin-top: 0px;">
+                    <fieldset></fieldset>
+                    <p style="font-size:30px">Thank You for using this Website</p>
+                    <p style="font-size:15px">Aakash Saroop <a href = "https://www.linkedin.com/in/aakash-saroop-13a633190/" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin</a></p>
+                    <p style="font-size:15px">Bhairav Narkhede <a href = "https://www.linkedin.com/in/bhairav-narkhede/" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin</a></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/static/js/grayscale.js"></script>
+</body>
+
+</html>

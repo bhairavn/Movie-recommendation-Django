@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Contact-Form-Clean-user.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Dark.css' %}">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">SHnell</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="/user">Home</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="/user">trending</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="/user">profile</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="/user">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p></p>
+        </div>
+    </footer>
+    <div class="login-clean" style="padding-top: 80px;margin-top: -28px;">
+        <form method="POST" action="/changeuser1" style="width: 400px;padding: 40px;padding-right: 40px;max-width: 432px;">
+        {% csrf_token %}
+            <h2 class="sr-only" style="width: 24px;height: 5px;">Login Form</h2>
+            <div class="illustration" style="color: rgb(167,16,48);width: 325px;height: 57px;">
+                <h1 style="font-size: 31px;color: rgb(43,91,112);text-align: center;text-shadow: 2px 0px 0px rgb(0,141,203);">User Details</h1>
+            </div>
+                    <div class="form-group" action="">
+                    <input class="form-control"  type="text" name="firstname" placeholder="First Name" style="margin-bottom: 15px;width: 150px;margin-left: -1px;">
+                    <input class="form-control" type="text" name="lastname" placeholder="Last Name" style="margin-bottom: 16px;width: 150px;height: 42px;padding-top: 3px;margin-left: 171px;margin-top: -59px;">
+                    <input class="form-control" type="tel" name="phone" placeholder="Phone" style="margin-bottom: 15px;">
+                    <input class="form-control" type="text" name="Gender" placeholder="Gender" style="margin-bottom: 15px;">
+                    <input class="form-control" type="text" name="genre" placeholder="Genre" style="margin-bottom: 15px;">
+					<h4 style="color: rgb(43,91,112);margin-bottom: 10px;padding: -4px;">Email:</h4>
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                    <button class="btn btn-primary btn-block" type="submit" style="background: rgb(50,104,143);">change</button>
+            </div>
+        </form>
+    </div>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/static/js/grayscale.js"></script>
+</body>
+
+</html>

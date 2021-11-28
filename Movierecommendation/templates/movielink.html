@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+{% load listitem %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>streaming</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Contact-Form-Clean-user.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Dark.css' %}">
+</head>
+
+<body style="background-image:url('{% static 'img/star-sky.jpg' %}');">
+    <div></div>
+    <p style="text-align: center;font-size: 47px;margin-top: 55px;">Movie Link</p>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="{% static 'img/star-sky.jpg' %}" width="250" height="350" style="margin-left: 115px;text-align: center;margin-top: 54px;"></div>
+                <div class="col-md-6">
+                    <p style="font-size: 20px;margin-bottom: 18px;">Movie:{{ name }}</p>
+                    <p style="font-size: 20px;margin-bottom: 18px;">Year:{{ year }}</p>
+                    <p style="font-size: 20px;margin-bottom: 18px;">Rating:{{ rating }}</p>
+                    <p style="font-size: 20px;margin-bottom: 30px;">Genre:{{ genre }}</p>
+                    <p style="font-size: 20px;margin-bottom: 30px;">Director:{{ summary|listitem:1 }}</p>
+                    <p style="font-size: 20px;margin-bottom: 30px;">Cast:{{ summary|listitem:2 }}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <p style="font-size: 24px;text-align: center;">Streaming on..    {{mstream}}</p>
+        <p style="font-size: 24px;text-align: center;">Description:  {{summary|listitem:0 }}</p>
+        
+    </div>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/static/js/grayscale.js"></script>
+</body>
+
+</html>

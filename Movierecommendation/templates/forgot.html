@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>movierecommendation</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Contact-Form-Clean-user.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Dark.css' %}">
+</head>
+
+<body>
+    <div class="login-dark" style="width: 100%;height: 100%;margin-top: -20px;margin-bottom: -37px;">
+        <p style="text-align: center;font-size: 41px;margin-top: 17px;margin-bottom: 9px;padding: 152px;">Forgot Password</p>
+        <form method="post" style="background: rgba(0,0,0,0.18);">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" style="margin-top: -56px;margin-bottom: 11px;">
+                <input
+                    class="form-control" type="tel" name="telephone" placeholder="Phone" style="margin-bottom: 10px;margin-top: 9px;"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">submit</button></div>
+        </form>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">SHnell</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="/">Home</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="/">Trending</a></li>
+                    {% comment %} <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="{{url_for('login')}}">login</a></li> {% endcomment %}
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="/">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/static/js/grayscale.js"></script>
+</body>
+
+</html>
